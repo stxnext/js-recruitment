@@ -14,7 +14,7 @@ is a part of these skills!
     * Backend returns stocks history for last 10 days. You need to download all symbols we support and then download
     history for every symbol separately. We highly encourage you to use fetch API.
     * Frontend consists of spinner and canvas. Make it spin while you are waiting for data. After that hide spinner
-    and show data on linear chart. We prepared canvas with function to draw a line. It's only a suggestion.
+    and show data on linear chart (use `closed` property). We prepared canvas with function to draw a line. It's only a suggestion.
     You are free to do it any way you want! :)
     * Remember to describe axes and distinguish different stocks on chart!
     * You can add some error handling when error fail.
