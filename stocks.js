@@ -47,6 +47,9 @@ module.exports = {
       throw new Error(`Uknown stock ${stockName}`)
     }
     const timestamps = getTimestamps(+timestamp, 10)
-    return getSeries(stockName, timestamps)
+    return getSeries(stockName, timestamps).map((value, idx) => ({
+      value,
+      timestamp: timestamps[idx]
+    }))
   }
 }
